@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>In Loving Memory of [Grandma’s Name]</title>
+  <meta name="description" content="A small memorial page for [Grandma’s Name]." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="card">
+    <header class="header">
+      <h1>In Loving Memory of <span class="accent">[Grandma’s Name]</span></h1>
+      <p class="sub">[Dates, e.g., 1942–2024] • “A short line you associate with her.”</p>
+    </header>
+
+    <section class="hero">
+      <img class="photo" src="assets/grandma.jpg" alt="[Grandma’s Name]" />
+      <div class="details">
+        <h2>Her Voice</h2>
+        <p class="small">
+          Press play to hear a recording we’ll always keep close.
+        </p>
+
+        <audio controls preload="metadata" class="audio">
+          <source src="assets/grandma-voice.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+
+        <div class="buttons">
+          <button id="copyLink" class="btn">Copy Page Link</button>
+          <button id="toggleTranscript" class="btn btn-ghost">Show Transcript</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="transcript" class="transcript hidden" aria-hidden="true">
+      <h2>Transcript</h2>
+      <p class="small muted">You can replace this with her exact words.</p>
+      <div class="quote">
+        <p>
+          “[Paste the transcription here…]”
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="small muted">
+        Made with love for Dad. ❤️
+      </p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
