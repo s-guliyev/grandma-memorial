@@ -87,3 +87,13 @@ body{
   .hero{grid-template-columns: 1fr;}
   .photo{height:360px;}
 }
+
+.photo-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap:14px;
+}
+
+.photo-grid .photo{
+  height:320px;
+}
